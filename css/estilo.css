@@ -1,0 +1,129 @@
+body {
+	margin: 0px;
+	background-color: #ddd;
+	overflow: hidden;
+}
+.ooo {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: linear-gradient(red, transparent),  linear-gradient(to top left, lime, transparent),  linear-gradient(to top right, blue, transparent);
+	background-blend-mode: screen;
+}
+.super_contenedor {
+  display: flex;
+  align-items: stretch;
+  flex-direction: row;
+  position: absolute;
+    z-index: 9;
+}
+.contenedor {
+	 display: flex;
+   align-items: stretch;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 100vh;
+    
+}
+.contenido {
+	padding: 20px 20px;
+	background: #fff;
+}
+.contenido_clon {
+  display: flex;
+	justify-content: flex-end;
+  flex-direction: column;
+  padding: 20px 0px;
+}
+.contenido_grande {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: absolute;
+  width: 50%;
+  z-index: 999;
+  right: 0;
+}
+.contenido_grande div {
+  background: #fff;
+  padding: 20px;
+}
+.despliegue {
+  max-width: 500px;
+  display: flex;
+  align-content: center;
+  align-items: center;
+}
+.despliegue_int {
+  background: #2feaa2;
+  padding: 20px;
+}
+.despliegue_int p {
+  padding-top: 10px;
+}
+.cont_bio {
+	/*display: none;*/
+  display: flex;
+}
+.cerrar {
+  float: right;
+  cursor: pointer;
+  width: 20px;
+}
+.menu {
+	background: #000;
+	color: #fff;
+  font-size: 1.2em;
+  font-weight: 300;
+  
+  -webkit-transition: all 400ms; /* Safari */
+  transition: all 400ms;
+}
+.menu div {
+  padding: 0px 20px;
+  cursor: pointer;
+}
+
+
+/* Animacion */
+.swing-in-left-fwd {
+	-webkit-animation: swing-in-left-fwd 0.5s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+	animation: swing-in-left-fwd 0.5s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+}
+ @-webkit-keyframes swing-in-left-fwd {
+ 0% {
+ -webkit-transform: rotateY(100deg);
+ transform: rotateY(100deg);
+ -webkit-transform-origin: left;
+ transform-origin: left;
+ opacity: 0;
+}
+ 100% {
+ -webkit-transform: rotateY(0);
+ transform: rotateY(0);
+ -webkit-transform-origin: left;
+ transform-origin: left;
+ opacity: 1;
+}
+}
+ @keyframes swing-in-left-fwd {
+ 0% {
+ -webkit-transform: rotateY(100deg);
+ transform: rotateY(100deg);
+ -webkit-transform-origin: left;
+ transform-origin: left;
+ opacity: 0;
+}
+ 100% {
+ -webkit-transform: rotateY(0);
+ transform: rotateY(0);
+ -webkit-transform-origin: left;
+ transform-origin: left;
+ opacity: 1;
+}
+}
+      /*/Animacion */
