@@ -13,6 +13,20 @@ body {
 	background-blend-mode: screen;
   background-repeat: no-repeat;
 }
+
+/* Safari */
+.ooo {
+    background: gray;
+    @supports (background-blend-mode: screen) {
+        background:
+            linear-gradient(red, transparent),
+            linear-gradient(to top left, lime, transparent),
+            linear-gradient(to top right, blue, transparent);
+        background-blend-mode: screen;
+    }
+}
+/*/Safari */
+
 .super_contenedor {
   display: flex;
   align-items: stretch;
