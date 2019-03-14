@@ -9,8 +9,9 @@ body {
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background: linear-gradient(red, transparent),  linear-gradient(to top left, lime, transparent),  linear-gradient(to top right, blue, transparent);
+	background-image: linear-gradient(red, transparent),  linear-gradient(to top left, lime, transparent),  linear-gradient(to top right, blue, transparent);
 	background-blend-mode: screen;
+  background-repeat: no-repeat;
 }
 .super_contenedor {
   display: flex;
