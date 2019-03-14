@@ -13,7 +13,7 @@
     <div class="super_contenedor">
     
     <!-- 1 INICIO -->
-    <div class="contenedor">
+    <div class="contenedor alpha">
       <div class="contenido elem_1">
         <h2 style="margin-bottom: 0px">
         NicholasPrice<br>
@@ -22,15 +22,14 @@
       </div>
       <div class="contenido elem_2">
         <p>
-          tel: +56 9 9087231<br>
-          email: nicoprice@gmail.com
+          <a href="tel:+56971475208">+56 9 7147 5208</a><br><a href="mailto:mickyprice@gmail.com">nprice1990@gmail.com</a>
         </p>
       </div>
     </div>
     <!--/1 INICIO -->
     
     <!-- 2 MENU -->
-    <div class="contenedor">
+    <div class="contenedor beta">
       <div class="contenido_clon menu">
         <div class="btn_bio">Bio</div>
         <div class="btn_works">Works</div>
@@ -39,16 +38,39 @@
     </div>
     <!--/2 MENU -->
       
-    <!-- 3 CONT 1 -->
+    <!-- 3 CONT 1 (BIO) -->
     <div class="despliegue cont_bio">
       <div class="despliegue_int">
         <div class="cerrar"><img src="images/cerrar.png" width="100%"></div>
-        <h2>Bio</h2>
+        <h2>BIO</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit possimus similique amet provident illo eveniet iste incidunt placeat rem temporibus? Consequatur corporis molestiae quasi vitae neque nesciunt eaque blanditiis, nam!</p>
         <p><a href="">Linkedin</a></p>
       </div>
     </div>
-    <!--/3 CONT 1 -->
+    <!--/3 CONT 1 (BIO) -->
+      
+    <!-- 3 CONT 2 (WORKS) -->
+    <div class="despliegue cont_works">
+      <div class="despliegue_int">
+        <div class="cerrar"><img src="images/cerrar.png" width="100%"></div>
+        <h2>WORKS</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit possimus similique amet provident illo eveniet iste incidunt placeat rem temporibus? Consequatur corporis molestiae quasi vitae neque nesciunt eaque blanditiis, nam!</p>
+        <p><a href="">Linkedin</a></p>
+      </div>
+    </div>
+    <!--/3 CONT 2 (WORKS) -->
+      
+    <!-- 3 CONT 3 (CONTACT) -->
+    <div class="despliegue cont_contact">
+      <div class="despliegue_int">
+        <div class="cerrar"><img src="images/cerrar.png" width="100%"></div>
+        <h2>CONTACT</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias ab optio officia quibusdam eius itaque maiores. Ipsa at numquam quibusdam velit aut quasi dolor possimus amet reprehenderit? A, esse explicabo!</p>
+        <p><a href="">+56 9 9087231</a> / <a href="">nicoprice@gmail.com</a> / <a href="">Linkedin</a> / <a href="">Instagram</a></p>
+      </div>
+    </div>
+    <!--/3 CONT 3 (CONTACT) -->
+      
     </div>
     
     
@@ -121,7 +143,7 @@
 				composer.addPass( new THREE.RenderPass( scene, camera ) );
 
 				var effect = new THREE.ShaderPass( THREE.DotScreenShader );
-				effect.uniforms[ 'scale' ].value = 0;
+				effect.uniforms[ 'scale' ].value = 3;
 				composer.addPass( effect );
 
 				var effect = new THREE.ShaderPass( THREE.RGBShiftShader );
