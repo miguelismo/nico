@@ -2,6 +2,12 @@ body {
 	margin: 0px;
 	background-color: #ddd;
 	overflow: hidden;
+  
+  /* Fix alto en iphone */
+  height: 100vh; /* Use vh as a fallback for browsers that do not support Custom Properties */
+  height: calc(var(--vh, 1vh) * 100);
+  margin: 0 auto;
+  /*/Fix alto en iphone */
 }
 .ooo {
 	position: absolute;
@@ -11,6 +17,12 @@ body {
 	right: 0;
 	background: linear-gradient(red, transparent),  linear-gradient(to top left, lime, transparent),  linear-gradient(to top right, blue, transparent);
 	background-blend-mode: screen;
+  
+  /* Fix alto en iphone */
+  height: 100vh; /* Use vh as a fallback for browsers that do not support Custom Properties */
+  height: calc(var(--vh, 1vh) * 100);
+  margin: 0 auto;
+  /*/Fix alto en iphone */
 }
 @media only screen and (max-width: 700px) {
   .ooo {
@@ -22,7 +34,13 @@ body {
   align-items: stretch;
   flex-direction: row;
   position: absolute;
-    z-index: 9;
+  z-index: 9;
+  
+  /* Fix alto en iphone */
+  height: 100vh; /* Use vh as a fallback for browsers that do not support Custom Properties */
+  height: calc(var(--vh, 1vh) * 100);
+  margin: 0 auto;
+  /*/Fix alto en iphone */
 }
 .contenedor {
 	 display: flex;
