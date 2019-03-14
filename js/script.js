@@ -43,14 +43,14 @@ $(document).ready(function () {
   });
   
   $(".btn_works").mouseover(function () {
-    $(".menu").css("background", "#d03999");
+    $(".menu").css("background", "#ff47bc");
   });
   $(".btn_works").mouseout(function () {
     $(".menu").css("background", "#000");
   });
   
   $(".btn_contact").mouseover(function () {
-    $(".menu").css("background", "#f07e3c");
+    $(".menu").css("background", "#ff904f");
   });
   $(".btn_contact").mouseout(function () {
     $(".menu").css("background", "#000");
@@ -82,16 +82,25 @@ $(document).ready(function () {
   
   $(".btn_bio").click(function () {
     funcBorron().done( muestraUno() );
-    //$(".cont_bio").css("display", "flex").hide().fadeIn();
   });
   $(".btn_works").click(function () {
     funcBorron().done( muestraDos() );
-    //$(".cont_works").css("display", "flex").hide().fadeIn();
   });
   $(".btn_contact").click(function () {
     funcBorron().done( muestraTres() );
-    //$(".cont_contact").css("display", "flex").hide().fadeIn();
   });
+  
+  // Galeria
+  
+  $(".gallery a img").mouseover(function () {
+    $(this).css("-webkit-filter", "grayscale(0%)");
+    $(this).css("filter", "grayscale(0%)");
+  });
+  $(".gallery a img").mouseout(function () {
+    $(this).css("-webkit-filter", "grayscale(100%)");
+    $(this).css("filter", "grayscale(100%)");
+  });
+  
   
 
 });
