@@ -69,10 +69,10 @@ body {
   background: #2feaa2;
 }
 .cont_works .despliegue_int {
-  background: #d03999;
+  background: #ff47bc;
 }
 .cont_contact .despliegue_int {
-  background: #f07e3c;
+  background: #ff904f;
 }
 .cont_bio, .cont_works, .cont_contact {
 	display: none;
@@ -95,7 +95,11 @@ body {
   padding: 0px 20px;
   cursor: pointer;
 }
-
+.gallery a img {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  max-width: 40px;
+}
 /* Responsivo */
 
 @media only screen and (max-width: 700px) {
