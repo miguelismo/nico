@@ -9,23 +9,12 @@ body {
 	bottom: 0;
 	left: 0;
 	right: 0;
+  /*
 	background-image: linear-gradient(red, transparent),  linear-gradient(to top left, lime, transparent),  linear-gradient(to top right, blue, transparent);
 	background-blend-mode: screen;
   background-repeat: no-repeat;
+  */
 }
-
-/* Safari */
-.ooo {
-    background: gray;
-    @supports (background-blend-mode: screen) {
-        background:
-            linear-gradient(red, transparent),
-            linear-gradient(to top left, lime, transparent),
-            linear-gradient(to top right, blue, transparent);
-        background-blend-mode: screen;
-    }
-}
-/*/Safari */
 
 .super_contenedor {
   display: flex;
