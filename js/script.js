@@ -95,10 +95,12 @@ $(document).ready(function () {
   $(".gallery a img").mouseover(function () {
     $(this).css("-webkit-filter", "grayscale(0%)");
     $(this).css("filter", "grayscale(0%)");
+    $(this).css("opacity", "1");
   });
   $(".gallery a img").mouseout(function () {
     $(this).css("-webkit-filter", "grayscale(100%)");
     $(this).css("filter", "grayscale(100%)");
+    $(this).css("opacity", ".5");
   });
   
   
