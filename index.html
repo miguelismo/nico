@@ -6,6 +6,7 @@
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/example.css">
+    <link rel="stylesheet" href="dist/magnific-popup.css">
     <link rel="stylesheet" href="css/estilo.css">
 	</head>
 	<body>
@@ -53,9 +54,23 @@
     <div class="despliegue cont_works">
       <div class="despliegue_int">
         <div class="cerrar"><img src="images/cerrar.png" width="100%"></div>
-        <h2>WORKS</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit possimus similique amet provident illo eveniet iste incidunt placeat rem temporibus? Consequatur corporis molestiae quasi vitae neque nesciunt eaque blanditiis, nam!</p>
-        <p><a href="">Linkedin</a></p>
+        <h2>WORKS</h2><br>
+        <div class="gallery">
+          <a href="galeria/imagen_1.jpg"><img src="images/foto_1_mini.jpg"></a>
+          <a href="galeria/imagen_1.jpg"><img src="images/foto_1_mini.jpg"></a>
+          <a href="galeria/imagen_1.jpg"><img src="images/foto_1_mini.jpg"></a>
+          <a href="galeria/imagen_1.jpg"><img src="images/foto_1_mini.jpg"></a>
+          <a href="galeria/imagen_1.jpg"><img src="images/foto_1_mini.jpg"></a>
+          <a href="galeria/imagen_1.jpg"><img src="images/foto_1_mini.jpg"></a>
+          <a href="galeria/imagen_1.jpg"><img src="images/foto_1_mini.jpg"></a>
+          <a href="galeria/imagen_1.jpg"><img src="images/foto_1_mini.jpg"></a>
+          <a href="galeria/imagen_1.jpg"><img src="images/foto_1_mini.jpg"></a>
+          <a href="galeria/imagen_1.jpg"><img src="images/foto_1_mini.jpg"></a>
+          <a href="galeria/imagen_1.jpg"><img src="images/foto_1_mini.jpg"></a>
+          <a href="galeria/imagen_1.jpg"><img src="images/foto_1_mini.jpg"></a>
+          <a href="galeria/imagen_1.jpg"><img src="images/foto_1_mini.jpg"></a>
+          <a href="galeria/imagen_1.jpg"><img src="images/foto_1_mini.jpg"></a>
+        </div>
       </div>
     </div>
     <!--/3 CONT 2 (WORKS) -->
@@ -179,6 +194,25 @@
 			}
 
 		</script>
+    
+    <!-- Galeria -->
+    <script src="dist/jquery.magnific-popup.js"></script>
+    <script>
+    $(document).ready(function() {
+
+    $('.gallery').each(function() { // the containers for all your galleries
+        $(this).magnificPopup({
+            delegate: 'a', // the selector for gallery item
+            type: 'image',
+            gallery: {
+              enabled:true
+            }
+        });
+    });
+
+    });
+    </script>
+    <!--/Galeria -->
     
     <script src="js/script.js"></script>
 
