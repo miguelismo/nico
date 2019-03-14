@@ -108,7 +108,7 @@ body {
 .menu {
 	background: #000;
 	color: #fff;
-  font-size: 1.2em;
+  font-size: 1.3em;
   font-weight: 300;
   
   -webkit-transition: all 400ms; /* Safari */
@@ -134,7 +134,7 @@ body {
     justify-content: flex-start;
   }
   .despliegue_int {
-    height: 200px !important
+    height: 180px !important
   }
   .despliegue {
     max-width: 100%;
