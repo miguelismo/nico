@@ -1,7 +1,7 @@
 $(document).ready(function () {
   
   // Borra los elementos al ppio
-  $(".cont_bio").fadeOut();
+  //$(".cont_bio").fadeOut();
 
   // Inicio 
   
@@ -9,18 +9,32 @@ $(document).ready(function () {
     var altoContenido = ($(".elem_1").outerHeight() + $(".elem_2").outerHeight()-40);
     $(".contenido_clon").css("height", (altoContenido + "px"));
     $(".despliegue_int").css("height", (altoContenido + "px"));
-    //$(".contenido_clon").css("width", (altoContenido + "px"));
-    
   }
-
-  alCambiar()
-
-  $(window).resize(function () {
-    alCambiar()
+  
+  // Responsivo
+  
+  function responsivo() {
+    var anchoVentana = $( window ).width();
+    var anchoVentanaTercio = $( window ).width() / 3;
+    var anchoVentanaDosTercios = anchoVentanaTercio * 2;
+    if (anchoVentana > 700) {
+      $(".alpha").css("width", "300px");
+      $(".beta").css("width", "100px");
+    } else if (anchoVentana < 700) {
+      $(".alpha").css("width", (anchoVentanaDosTercios + "px"));
+      $(".beta").css("width", (anchoVentanaTercio + "px"));
+    }
+  }
+  
+  responsivo();
+  alCambiar();
+  
+  $( window ).resize(function () {
+    responsivo();
+    alCambiar();
   });
   
   // Botones hover 
-
   $(".btn_bio").mouseover(function () {
     $(".menu").css("background", "#2feaa2");
   });
@@ -44,12 +58,40 @@ $(document).ready(function () {
   
   // Boton cerrar
   $(".cerrar").click(function () {
-    $(".cont_bio").fadeOut();
+    funcBorron();
   });
   
   // Botones click
+  function funcBorron() {
+    var r = $.Deferred();
+    $(".cont_bio").css("display", "flex").hide().fadeOut();
+    $(".cont_works").css("display", "flex").hide().fadeOut();
+    $(".cont_contact").css("display", "flex").hide().fadeOut();
+    return r;
+  };
+  
+  function muestraUno() {
+    $(".cont_bio").css("display", "flex").hide().fadeIn();
+  };
+  function muestraDos() {
+    $(".cont_works").css("display", "flex").hide().fadeIn();
+  };
+  function muestraTres() {
+    $(".cont_contact").css("display", "flex").hide().fadeIn();
+  };
+  
   $(".btn_bio").click(function () {
-    $(".cont_bio").fadeIn();
+    funcBorron().done( muestraUno() );
+    //$(".cont_bio").css("display", "flex").hide().fadeIn();
   });
+  $(".btn_works").click(function () {
+    funcBorron().done( muestraDos() );
+    //$(".cont_works").css("display", "flex").hide().fadeIn();
+  });
+  $(".btn_contact").click(function () {
+    funcBorron().done( muestraTres() );
+    //$(".cont_contact").css("display", "flex").hide().fadeIn();
+  });
+  
 
 });
