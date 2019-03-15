@@ -132,7 +132,6 @@ canvas {
   margin: 0 auto !important;
   /*/Fix alto en iphone */
   overflow: hidden;
-  position: fixed;
 }
 /* Responsivo */
 
