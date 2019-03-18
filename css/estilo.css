@@ -141,10 +141,10 @@ canvas {
     bottom: 0;
   }
   .contenedor {
-    justify-content: flex-start;
+    /*justify-content: flex-start;*/
   }
   .despliegue_int {
-    height: 180px !important
+    height: 160px !important
   }
   .despliegue {
     max-width: 100%;
