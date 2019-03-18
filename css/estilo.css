@@ -3,6 +3,15 @@ body {
 	background-color: #ddd;
 	overflow: hidden;
 }
+
+/* Fix alto mobile scroll */
+body, .super_contenedor, .ooo {
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+  margin: 0 auto;
+}
+/*/Fix alto mobile scroll */
+
 .ooo {
 	position: absolute;
 	top: 0;
