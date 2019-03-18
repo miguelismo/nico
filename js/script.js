@@ -38,27 +38,22 @@ $(document).ready(function () {
   $(".btn_bio").mouseover(function () {
     $(".menu").css("background", "#2feaa2");
   });
-  $(".btn_bio").mouseout(function () {
-    $(".menu").css("background", "#000");
+  $(".btn_bio").click(function () {
+    $(".menu").css("background", "#2feaa2");
   });
   
   $(".btn_works").mouseover(function () {
     $(".menu").css("background", "#ff47bc");
   });
-  $(".btn_works").mouseout(function () {
-    $(".menu").css("background", "#000");
+    $(".btn_works").click(function () {
+    $(".menu").css("background", "#ff47bc");
   });
   
   $(".btn_contact").mouseover(function () {
     $(".menu").css("background", "#ff904f");
   });
-  $(".btn_contact").mouseout(function () {
-    $(".menu").css("background", "#000");
-  });
-  
-  // Boton cerrar
-  $(".cerrar").click(function () {
-    funcBorron();
+    $(".btn_contact").click(function () {
+    $(".menu").css("background", "#ff904f");
   });
   
   // Botones click
@@ -69,6 +64,12 @@ $(document).ready(function () {
     $(".cont_contact").css("display", "flex").hide().fadeOut();
     return r;
   };
+    
+  // Boton cerrar
+  $(".cerrar").click(function () {
+    funcBorron();
+    $(".menu").css("background", "#000");
+  });
   
   function muestraUno() {
     $(".cont_bio").css("display", "flex").hide().fadeIn();
@@ -90,7 +91,7 @@ $(document).ready(function () {
     funcBorron().done( muestraTres() );
   });
   
-  // Galeria
+  // Galeria (Fotos)
   
   $(".gallery a img").mouseover(function () {
     $(this).css("-webkit-filter", "grayscale(0%)");
@@ -98,6 +99,19 @@ $(document).ready(function () {
     $(this).css("opacity", "1");
   });
   $(".gallery a img").mouseout(function () {
+    $(this).css("-webkit-filter", "grayscale(100%)");
+    $(this).css("filter", "grayscale(100%)");
+    $(this).css("opacity", ".5");
+  });
+  
+  // Galeria (Videos)
+  
+  $(".mini_video").mouseover(function () {
+    $(this).css("-webkit-filter", "grayscale(0%)");
+    $(this).css("filter", "grayscale(0%)");
+    $(this).css("opacity", "1");
+  });
+  $(".mini_video").mouseout(function () {
     $(this).css("-webkit-filter", "grayscale(100%)");
     $(this).css("filter", "grayscale(100%)");
     $(this).css("opacity", ".5");
