@@ -44,13 +44,12 @@ body {
   /*/Fix alto en iphone */
 }
 .contenedor {
-	 display: flex;
-   align-items: stretch;
-    justify-content: center;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    height: 100vh;
-    
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: 100vh;  
 }
 .contenido {
 	padding: 20px 20px;
@@ -142,7 +141,7 @@ canvas {
     bottom: 0;
   }
   .contenedor {
-    /*justify-content: flex-start;*/
+    justify-content: flex-start;
   }
   .despliegue_int {
     height: 160px !important
