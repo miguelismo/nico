@@ -212,9 +212,10 @@
     
     <!-- Avoid Scroll -->
     <script>
-    document.ontouchstart = function(e){ 
-    e.preventDefault(); 
-    }
+    $(document).ready(function() {
+      document.ontouchstart = function(e){ e.preventDefault(); }
+      document.ontouchmove = function(e){ e.preventDefault(); }
+    });
     </script>
     <!--/Avoid Scroll -->
     
